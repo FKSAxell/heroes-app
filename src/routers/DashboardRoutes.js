@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Navbar } from "../components/ui/Navbar";
 import { Switch, Route, Redirect } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import { SearchScreen } from "../components/search/SearchScreen";
 
 export const DashboardRoutes = () => {
   return (
-    <>
+    <Fragment>
       <Navbar />
 
       <div className="container mt-2">
@@ -22,6 +22,6 @@ export const DashboardRoutes = () => {
           <Redirect to="/marvel" />
         </Switch>
       </div>
-    </>
+    </Fragment>
   );
 };
