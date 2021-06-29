@@ -11,7 +11,6 @@ export const HeroScreen = ({history}) => {
   if (!hero) return <Redirect to="/" />;
 
   const {
-    
     superhero,
     publisher,
     alter_ego,
