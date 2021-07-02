@@ -10,9 +10,10 @@ export const HeroesApp = () => {
   const [user, dispatch] = useReducer(authReducer, {}, init);
 
   useEffect(() => {
-    console.log("user cambió",user);
     localStorage.setItem("user", JSON.stringify(user));
   }, [user])
+
+  //se podría aplicar el cambio a logged para cerrar sesión
 
   return (
     <AuthContext.Provider value={{ user, dispatch }}>
