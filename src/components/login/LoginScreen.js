@@ -6,13 +6,14 @@ export const LoginScreen = ({ history }) => {
   const { dispatch } = useContext(AuthContext);
   const handleLogin = () => {
     // history.push('/');
-    
+
+
     dispatch({
       type: types.login, payload: {
         name: 'Axell',
       }
-    })
-    
+    });
+
     history.replace("/");
 
   };
